@@ -41,7 +41,7 @@ function modalWin(text) {
     </div>
     `;
     wrapper.insertAdjacentHTML('afterend', content);
-    let modal = document.querySelector('.modal');
+    const modal = document.querySelector('.modal');
     modal.style.top = '-30%';
     setTimeout(() => {
         modal.style.top = '50%';
@@ -51,7 +51,7 @@ function modalWin(text) {
         wrapper.style.opacity = '.7';
         wrapper.style.transition = 'all 1s ease-in';
     }, 100)
-    let modalButton = document.querySelector('.modal-button');
+    const modalButton = document.querySelector('.modal-button');
     modalButton.addEventListener('click', () => {
         modal.style.top = '-30%';
         wrapper.style.background = 'gray';
